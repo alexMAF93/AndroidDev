@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import java.util.*
 
@@ -34,5 +33,7 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
         diceImage.setImageResource(drawableResource)
+        Toast.makeText(this, randomInt.toString(),
+            Toast.LENGTH_SHORT).show()
     }
 }
